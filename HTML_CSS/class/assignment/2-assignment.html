@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="#00FFFF">
+    
+    <table border="1" width="50%">
+        <tr>
+            <th><h1>Student Registration Form</h1></th>
+        </tr>
+    </table> 
+    <br>
+    <form>
+        <table width="650px" height="350px">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="username" id="name" placeholder="Enter full name">
+                </td>
+            </tr>
+                <td>
+                    <label for="Father-name">Father's Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="user's-Father-name" id="Father-name">
+                </td>
+            <tr>
+                <td>
+                    <label for="Mother-name">Mother's Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="user-mother-name" id="Mother-name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone-number">Phone Number: </label>
+                </td>
+                <td>
+                    <input type="tel" name="user-phone-number" id="phone-number" placeholder="091XXXXXXX">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email: </label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="Email" placeholder="sample@example.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender: </label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date Of Birth: </label>
+                </td>
+                <td>
+                    <input type="tel" name="date" id="date" size="2">
+                    <label>-</label>
+                    <input type="tel" name="month" id="month" size="2">
+                    <label>-</label>
+                    <input type="tel" name="year" id="year" size="3">
+                    <i>(dd-mm-yyyy)</i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">address: </label>
+                </td>
+                <td>
+                    <input type="text" name="address" id="address" placeholder="Street:- House:- Road:-" size="36">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Blood-group">Blood Group: </label>
+                </td>
+                <td>
+                    <select name="Blood-group" id="Blood-group">
+                        <option value="select">Select</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="deparment">deparment:</label>
+                </td>
+                <td>
+                    <input type="radio" name="deparment" id="CSE">
+                    <label for="CSE">CSE</label>
+                    <input type="radio" name="deparment" id="EEE">
+                    <label for="EEE">EEE</label>
+                    <input type="radio" name="deparment" id="BBA">
+                    <label for="BBA">BBA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course: </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="course" id="C">
+                    <label for="C">C</label>
+                    <input type="checkbox" name="course" id="C++">
+                    <label for="C++">C++</label>
+                    <input type="checkbox" name="course" id="Java">
+                    <label for="Java">Java</label>
+                    <input type="checkbox" name="course" id="AI">
+                    <label for="AI">AI</label>
+                    <input type="checkbox" name="course" id="Machine Learning">
+                    <label for="Machine-Learning">Machine Learning</label>
+                    <input type="checkbox" name="course" id="Robotics">
+                    <label for="Robotics">Robotics</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Photo">Photo: </label>
+                </td>
+                <td>
+                    <input type="file" name="photo" id="user-photo">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    <a href="http://codechef.com">Submit</a>
+    <input type="reset" value="reset">
+</body>
+</html>

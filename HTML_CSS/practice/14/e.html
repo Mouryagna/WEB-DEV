@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 3000px;
+            font-family: arial;
+            background: url(login.jpeg);
+        }
+        .message {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px 10px 50px; 
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-right: 10px;
+        }
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .add {
+            background-color: rgb(24,119,242);
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 8px 12px 8px 12px;
+            border-radius: 6px;
+            margin-right: 3px;
+        }
+
+        .text {
+            background-color: rgb(230,230,230);
+            border: none;
+            font-weight: bold;
+            padding: 8px 12px 8px 12px;
+            border-radius: 6px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <img src="cat.jpg" class="profile-pic">
+        <p class="name">Oliver Cat</p>
+        <button class="add">Add Friend</button>
+        <button class="text">Message</button>
+    </div>
+</body>
+</html>

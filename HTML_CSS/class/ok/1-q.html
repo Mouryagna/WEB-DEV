@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        .header {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+        .heading {
+            padding: 8px 15px 8px 8px;
+        }
+        .sub-heading {
+            padding: 2px;
+        }
+        .upper-border {
+            border: none;
+            background-color: lightpink;
+            padding: 5px;
+        }
+        .centering {
+            padding: 8px 15px 8px 15px;
+        }
+        .sub-header {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table width="750px" height="250px" border="1">
+        <tr class="header">
+            <td class="heading">ID</td>
+            <td class="heading">Name</td>
+            <td class="heading">Comments</td>
+            <td class="heading">Recommendation</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td rowspan="2" class="centering">
+                <table width="350px" height="120px" border="1">
+                    <tr class="sub-header">
+                        <td class="sub-heading">date</td>
+                        <td class="sub-heading">Comment</td>
+                    </tr>
+                    <tr>
+                        <td>2024-03-01</td>
+                        <td>Good progress</td>
+                    </tr>
+                    <tr>
+                        <td>2024-03-15</td>
+                        <td>Needs improvement</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="upper-border">Yes</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smitd</td>
+            <td class="upper-border">No</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Bob Johnson</td>
+            <td class="centering">
+                <table width="350px" height="120px" border="1">
+                    <tr class="sub-header">
+                        <td class="sub-heading">date</td>
+                        <td class="sub-heading">Comment</td>
+                    </tr>
+                    <tr>
+                        <td>2024-03-02</td>
+                        <td>Excellent Work</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="upper-border">Yes</td>
+        </tr>
+    </table>
+</body>
+</html>

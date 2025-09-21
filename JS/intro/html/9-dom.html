@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dom</title>
+</head>
+<body>
+    <button>Hello</button>
+    <button class="js-button">Hello2</button>
+    <script>
+        /*console.log(document.title);
+        document.title = 'changed';
+        console.log(document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML= '<button>Good job!</button>';
+        
+        document.body.innerHTML = 'hello';
+        document.title = 'goodjob!';
+        document.querySelector();-
+        get any element from the page and put in js*/
+        document.querySelector('button');
+        console.log(document.querySelector('button').innerHTML);
+
+        document.querySelector('button')
+            .innerHTML = 'changed';
+
+        const buttonElement = document.querySelector('.js-button');
+
+        console.log(buttonElement);
+    </script>
+</body>
+</html>

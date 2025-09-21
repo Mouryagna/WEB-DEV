@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g</title>
+</head>
+<body>
+    <script>
+        function convertLength(lenght,from,to) {
+            let l = 0;
+            if (from === 'miles') {
+                if(to === 'km') {
+                    l=1.6*lenght;
+                    console.log(`${l} KM`);
+                }
+                else if(to === 'ft') {
+                    l=lenght*5280;
+                    console.log(`${l} ft`);
+                }
+                else {
+                    console.log(`${lenght} miles`);
+                }
+            }
+            else if (from === 'km') {
+                if(to === 'miles') {
+                    l=lenght/1.6;
+                    console.log(`${l} miles`);
+                }
+                else if(to === 'ft') {
+                    l=lenght*3281;
+                    console.log(`${l} ft`);
+                }
+                else {
+                    console.log(`${lenght} KM`);
+                }
+            }
+            else if (from === 'ft') {
+                if(to === 'miles') {
+                    l=lenght/5280;
+                    console.log(`${l} miles`);
+                }
+                else if(to === 'miles') {
+                    l=lenght/3281;
+                    console.log(`${l} km`);
+                }
+                else {
+                    console.log(`${lenght} KM`);
+                }
+            }
+            else {
+                console.log(`invalid unit`);
+            }
+        }
+        convertLength(5,'miles','km');
+        convertLength(5,'miles','ft');
+        convertLength(5,'km','ft');
+        
+    </script>
+</body>
+</html>

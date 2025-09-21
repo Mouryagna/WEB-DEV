@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: arial;
+        }
+        .profile {
+            width: 36px;
+            border-radius: 18px;
+            height: 36px;
+        }
+        .header {
+            position: relative;
+            display: flex;
+            height: 36px;
+            width: 36px;
+            flex-direction: row;
+            align-items: center;
+        }
+        .header .tooltip {
+            position: absolute;
+            top: 36px;
+            left: 36px;
+            box-shadow: 0 0 2px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            transition: opacity 0.15s;
+            opacity: 0;
+            width: 200px;
+            pointer-events: none;
+        }
+        .header:hover .tooltip {
+            opacity: 1;
+        }
+        .info {
+            padding-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="profile" src="y1.jpg">
+        <div class="tooltip">
+            <img class="profile" src="y1.jpg">
+            <div class="info">
+                <p>T-series Telugu</p>
+                <p>11.5M Subscribers</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

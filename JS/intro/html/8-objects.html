@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+        const product= {
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name='cotton socks';
+        console.log(product);
+
+        product.newProperty = true;
+        console.log(product);
+
+        delete product.newProperty;
+        console.log(product); 
+        /*objects makes more organise 
+        let us group multiple vales together
+        let us use multpile values together*/
+        const p2= {
+            name: 'shirt',
+            'delivery-time': '1 day',
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            fun: function function1() {
+                console.log('function inside object');
+            }
+        };
+        console.log(p2);
+        console.log(p2.name);
+        console.log(p2['name']);
+        /*54 lets us use properties that don't work with dot notation*/
+        //console.log(p2.delivery-time);
+        /*sub both delivery and time in .notation*/
+        console.log(p2['delivery-time']);
+        console.log(p2.rating.count);
+        p2.fun();
+    </script>
+</body>
+</html>

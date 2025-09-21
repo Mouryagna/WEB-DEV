@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+        div {
+            font-weight: bold;
+            background-color: lightblue;
+            display: inline-block;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <!--Create a script that uses a to ask the user for their name. Then, display the greeting message ("Hello, [name]! Welcome to our site!") inside a <div> dynamically. Apply following  to the message:
+        The text should be and .
+        The background color should be .
+        The text should appear in a
+    -->
+        <input type="text" name="name" id="name" placeholder="name">
+        <div id="display-name"></div>
+        <script>
+            setInterval(()=> {
+                let inputValue=document.getElementById('name');
+                document.getElementById('display-name').innerHTML=`Hello, ${inputValue.value}! Welcome to out site!`;
+            },150);
+        </script>
+</body>
+</html>

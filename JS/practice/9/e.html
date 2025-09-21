@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" class="name" onkeydown="pressEnter()">
+    <button onclick="nameInput()">Submit</button>
+    <div class="appear"></div>
+    <script>
+        function nameInput() {
+            let inputElement = document.querySelector('.name')
+
+            document.querySelector('.appear')
+            .innerHTML = `<p>my name is ${inputElement.value}</p>`;
+        }
+        function pressEnter() {
+            if(event.key === 'Enter') {
+                const inputElement= document.querySelector('.name');
+                document.querySelector('.appear')
+                .innerHTML = `<p>my name is ${inputElement.value}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

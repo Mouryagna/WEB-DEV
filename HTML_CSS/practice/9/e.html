@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter box</title>
+    <style>
+        .box {
+            box-shadow: 0 0 6px rgba(0,0,0,0.3);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            width: 400px;
+        }
+        .img {
+            width: 50px;
+            border-radius: 100px;
+            vertical-align: middle;
+        }
+        .tweet {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 18px;
+            border: none;
+            font-size: 18px;
+            vertical-align: middle;
+            font-family: arial;
+        }
+        .send {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            border-radius: 22px;
+            font-size: 18px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-family: arial;
+            transition: opacity 0.15s;
+
+        }
+        .send:hover {
+            opacity: 0.8;
+        }
+        .send:active {
+            opacity: 0.7;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+    <img src="google.png" class="img">
+    <input type="text" placeholder="What's happening?" class="tweet">
+    <button class="send">Tweet</button>
+
+    </div>
+
+
+    
+
+</body>
+</html>

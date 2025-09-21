@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="add-to-cart" onclick="addToCart();">Add to Cart</button>
+    <p class="added"></p>
+    <script>
+        let timeout;
+        function addToCart() {
+            let add=document.querySelector('.added');
+            add.innerHTML='Added';
+            clearTimeout(timeout);
+            timeout=setTimeout(function() {
+                add.innerHTML='';
+            },2000);
+        }
+    </script>
+</body>
+</html>

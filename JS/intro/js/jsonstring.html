@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const details = {
+        name: 'john',
+        age: '45',
+        gender: 'male'
+    };
+    const detailsString= JSON.stringify(details);
+    console.log(detailsString);
+    
+    const detailsStringReplacer= JSON.stringify(details,['name']);
+    console.log(detailsStringReplacer);
+    
+    const detailsStringParse= JSON.parse(detailsString);
+    console.log(detailsStringParse);
+    console.log(detailsStringParse.name);
+    console.log(detailsStringParse.age);
+    console.log(detailsStringParse.gender);
+    
+    </script>
+</body>
+</html>

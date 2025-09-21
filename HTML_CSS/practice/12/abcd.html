@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a {
+            background-color: lightblue;
+            width: 200px;
+            
+        }
+
+        .b {
+            background-color: lightpink;
+            width: 75;
+        }
+
+        .c {
+            background-color: lightblue;
+            width: 50px; 
+            
+        }
+
+        .d {
+            background-color: lightpink;
+            flex: 1;
+        }
+
+        .e {
+            background-color: lightblue;
+            width: 75px; 
+            
+        }
+
+        .m1 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .m2 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .m3 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            border-color: gray;
+            border-style: solid;
+            border-color: rgb(150, 150, 150);
+        }
+
+        .m4 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            align-items: center;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(150, 150, 150);
+            height: 50px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="m1">
+        <div class="a">200px</div>
+        <div class="b">75px</div>
+    </div>
+
+    <div class="m2">
+        <div class="c">50px</div>
+        <div class="d">flex1</div>
+        <div class="e">75px</div>
+    </div>
+
+    <div class="m3">
+        <div class="b" style="width: 50px;">item1</div>
+        <div class="b" style="width: 50px;">item2</div>
+        <div class="b" style="width: 50px;">item3</div>
+        <div class="b" style="width: 50px;">item4</div>
+
+    </div>
+
+    <div class="m4">
+        <div class="b" style="width: 50px;">item1</div>
+        <div class="b" style="width: 50px;">item2</div>
+    </div>
+</body>
+</html>

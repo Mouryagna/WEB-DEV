@@ -1,0 +1,97 @@
+<!DOCTYpE html>
+<html>
+<head>
+    <style>
+        .inbox {
+            display: flex;
+            color: rgb(100,100,100);
+            font-family: arial;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            
+        }
+
+        .message {
+            display: flex;
+            width: 500px;
+            justify-content: start;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        .profile-pic {
+            padding-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        
+        .text {
+            color: rgb(100,100,100);
+            margin-top: 0;
+        }
+
+        .time {
+            color: rgb(100,100,100);
+        }
+
+        .time-email {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 18px;
+            margin-bottom: 8px;
+        }
+        .info {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        .grid {
+            box-shadow: 0 0 3px rgba(0,0,0,0.15);
+            width: 430px;
+            padding-top: 1px;
+            padding-left: 8px;
+            padding-bottom: 18px;
+        }
+    </style>
+</head>
+<body style="margin-left: 22px;
+font-family: arial;">
+    <div class="grid">
+        <div class="inbox">
+            ALL INBOXES
+        </div>
+    
+        <div class="message">
+            <div class="profile-pic"><img src="cat.jpg"></div>
+            <div class="info">
+                <div class="time-email">
+                    <p class="name">Chewy promotions</p>
+                    <p class="time">4:58 PM</p>
+                </div>
+                <div class="subject">Biggest sales of the year!</div>
+                <div class="text">Hey there! We're writing to tell you about our...</div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

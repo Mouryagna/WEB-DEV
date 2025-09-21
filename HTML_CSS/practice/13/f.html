@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            font-family: arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .tweet {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+        }
+        .profile {
+            padding-right: 12px;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .user {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 8px;
+        }
+        .name {
+            font-weight: bold;
+
+        }
+        .username {
+            color: rgb(96,96,96);
+        }
+        .info {
+            width: 350px;
+            padding-bottom: 12px;
+        }
+        .link {
+            border: 1px solid rgb(243,243, 243);
+            width: 350px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 12px;
+            
+        }
+        .thumbnail {
+            width: 175px;
+            height: 100px;
+            background-color: rgb(197, 197, 197);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        .youtube {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            padding: 12px;
+        }
+        .app {
+            color: rgb(96,96,96);
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body style="font-family: arial;">
+
+    <div class="tweet">
+        <div class="profile">
+            <img class="profile-pic" src="cat.jpg">
+        </div>
+    
+        <div class="message">
+            <div class="user">
+                <p class="name">supersimple.dev</p>
+                <p class="username">@SuperSimpleDev</p>
+            </div>
+            <p class="info">
+                What is backend web development? A complete overview. New video is up!
+            </p>
+            <div class="link">
+                <div class="thumbnail"></div>
+                <div class="youtube">
+                    <p class="app">youtube.com</p>
+                    <p class="title">Backend web development-a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

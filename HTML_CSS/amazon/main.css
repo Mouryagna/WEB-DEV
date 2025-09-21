@@ -1,0 +1,77 @@
+.shopping {
+    display: grid;
+    margin-left: 30px;
+    margin-right: 18px;
+    margin-top: -300px;
+}
+
+.main-img {
+    width: 1500px;
+    height: 600px;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    width: 350px;
+    background-color: white;
+    position: relative;
+    justify-content: space-between;
+}
+.int-product {
+    width: 320px;
+    height: 300px;
+}
+.top-interest {
+    font-weight: bold;
+    font-size: 22px;
+}
+.discover {
+    font-size: 13px;
+    color: rgb(59,116,172);
+    padding-top: 22px;
+}
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    row-gap: 18px;
+}
+.recent-view {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 12px 18px 12px;
+}
+.recent-img-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.recent {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    cursor: text;
+    display: inline-block;
+}
+span {
+    font-size: 14px;
+    margin-left: 8px;
+    font-weight: normal;
+    color: rgb(126,192,239);
+    cursor: pointer;
+    transition: color 0.15s, text-decoration 0.15s;
+}
+span:hover {
+    color: black;
+    text-decoration: underline;
+}

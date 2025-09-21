@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        body {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+        }
+        form {
+            background-color: lightsalmon;
+            width: 750px;
+            align-items: center;
+        }
+        input {
+            border-radius: 8px;
+            height: 22px;
+        }
+        select {
+            height: 28px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: lightsalmon;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+        .format {
+            display: flex;
+            justify-content: space-around;
+            gap: 75px;
+            align-items: center;
+        }
+        .purple {
+            margin-top: 32px;
+            background-color: purple;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            padding: 22px 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <div class="format">
+        <img src="image1.png" alt="HTML">
+        <form>
+            <table align="center">
+                <tr>
+                    <td>
+                        <p>
+                            <label for="first-name">FIRST NAME:</label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="first-name" id="first" placeholder="Enter first name" size="30"> (max 30 characters A-Z and a-z)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="last-name">LAST NAME:</label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="last-name" id="last" placeholder="Enter last name" size="30"> (max 30 characters A-Z and a-z)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="dob">DATE OF BIRTH: </label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="date" id="date" placeholder="Day" size="4">
+                        <select name="month" id="month">
+                            <option value="select">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="march">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <input type="text" name="year" id="year" placeholder="Year" size="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="mail">EMAIL ID:</label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="email" id="mail" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="mobile">MOBILE NO:</label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="tel" id="NUMBER" size="30" placeholder="Enter Mobile no">
+                        (10 digits number)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="gender">GENDER: </label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="female">
+                        Female
+                        <input type="radio" name="gender" id="male">
+                        Male
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="Address">ADDRESS: </label>
+                        </p>
+                    </td>
+                    <td>
+                        <textarea name="Address" id="Address" rows="5" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="city">CITY: </label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" name="city" id="city" size="30" placeholder="Enter your city name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="pincode">PINCODE: </label>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="tel" id="pincode" name="pincode" placeholder="Enter pin code"> (6 digits number)
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <img src="image2.png" alt="css">
+    </div>
+    <p class="purple">Registration Form Html Css</p>
+</body>
+</html>

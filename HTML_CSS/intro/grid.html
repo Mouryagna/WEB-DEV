@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .b {
+            background-color: lightblue;
+            
+        }
+        .c {
+            background-color: lightpink;
+        }
+        .a {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        .d {
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            margin-top: 30px;
+            
+        }
+
+        .e {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            margin-top: 30px;
+        }
+
+        .f {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 30px;
+            height: 200px;
+            column-gap: 20px;
+            row-gap: 40px; 
+        }
+    </style>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div class="a">
+        <div class="b">div 1</div>
+        <div class="c">div 2</div>
+    </div>
+
+    <div class="d">
+        <div class="b">div 1 100px</div>
+        <div class="c">div 2 100px</div>
+        <div class="b">div 3 200px</div>
+        <div class="c">div 4 100px</div>
+
+    </div>
+
+    <div class="e">
+        <div class="b">1fr</div>
+        <div class="c">1fr</div>
+        <div class="b">1fr</div>
+        <div class="c">2fr</div>
+
+    </div>
+
+    <div class="f">
+        <div class="b">1fr</div>
+        <div class="c">1fr</div>
+        <div class="b">1fr</div>
+        <div class="c">1fr</div>
+        <div class="b">1fr</div>
+        <div class="c">1fr</div>
+
+    </div>
+</body>
+</html>

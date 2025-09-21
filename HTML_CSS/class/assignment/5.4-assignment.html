@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    <!--Write a JavaScript program that asks the user  
+    When the user clicks a button, show a If the user clicks , redirect them to https://www.google.com.If the user clicks , display an : "You chose to stay on this page."-->
+    <button id="redirectBtn">Click Me</button>
+    <p id="message"></p>
+    <script>
+        document.getElementById("redirectBtn").addEventListener("click", function() {
+        let userChoice = confirm("Do you want to go to Google?");
+        
+        if (userChoice) {
+            window.location.href = "https://www.google.com";
+        } else {
+            document.getElementById("message").innerText = "You chose to stay on this page.";
+        }
+    });
+    </script>
+</body>
+
+
+
+</html>

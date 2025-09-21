@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgb(200,200,200);
+        }
+        .inform {
+            background-color: rgb(44, 115, 186);
+            width: 500px;
+            height: 450px;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table {
+            border-spacing: 15px;
+        }
+        label {
+            font-size: 18px;
+        }
+        .submit {
+            border: none;
+            padding: 8px 12px;
+            background-color: rgb(183, 0, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form id="myform" class="inform">
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="invalidName"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="invalidEmail"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Phone Number: </label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" id="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="invaildNumber"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="invalidpassword"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" id="submit" class="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit',(event)=> {
+            event.preventDefault();
+            const name=document.getElementById('name').value;
+            const email=document.getElementById('email').value;
+            const number=document.getElementById('number').value;
+            const password=document.getElementById('password').value;
+            document.getElementById('invalidName').innerHTML=checkName(name);
+            document.getElementById('invalidEmail').innerHTML=checkEmail(email);
+            document.getElementById('invaildNumber').innerHTML=checkNumber(number);
+            document.getElementById('invalidpassword').innerHTML=checkPassword(password);
+        })
+        function checkName(inputName) {
+            if(inputName==='') {
+                return "* Name cannot be empty";
+            }
+            else {
+                return '';
+            }
+        }
+        function checkEmail(inputMail) {
+            if(inputMail.indexOf('@')==-1 && inputMail.indexOf('.')==-1) {
+                return "* Invaild Email";
+            }
+            else {
+                return '';
+            }
+        }
+        function checkNumber(inputNum) {
+            let number=inputNum.toString();
+            if(number.string!=10) {
+                return '* Phone Number contains 10 digits';
+            }
+            else if(number.search(/[a-z]/)==-1 || number.search(/[A-z]/)) {
+                return '* Phone Number contains only digits';
+            }
+            else {
+                return '';
+            }
+        }
+        function checkPassword(inputPass) {
+            if(inputPass==='') {
+                return '* Password can not be empty';
+            }
+            else if(inputPass.length<8) {
+                return '* Password contains 8 characters';
+            }
+            else if(inputPass.charAt(0).toUpperCase()!==inputPass.charAt(0)) {
+                return '* 1st Letter Contains Uppercase';
+            }
+            else if(inputPass.search(/[a-z]/)==-1) {
+                return '* password contains atleast lowercase letters';
+            }
+            else if(inputPass.search(/[0-9]/)==-1) {
+                return '* password contains atleast 1 digit';
+            }
+            else {
+                return '';
+            }
+        }
+    </script>
+</body>
+</html>

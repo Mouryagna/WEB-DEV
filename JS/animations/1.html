@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .x {
+        width: 100px;
+        height: 100px;
+        font-size: 75px;
+        font-weight: bold;
+        background-color: red;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        animation-name: move;
+        animation-duration: 2s;
+        margin: 36px;
+        color: white;
+    }
+    .o {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        font-size: 150px;
+        font-weight: bold;
+        background-color: red;
+        text-align: center;
+        border-radius: 50%;
+        animation-name: move;
+        animation-duration: 2s;
+        margin: 36px;
+        color: white;
+    }
+    @keyframes move {
+        0% {
+            width: 0;
+            height: 0;
+            font-size: 0;
+        }        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="x">x</div>
+    <div class="o">o</div>
+</body>
+</html>

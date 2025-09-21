@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            font-family: arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .mutal-pic {
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+            border-radius: 14px;
+            vertical-align: middle;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 8px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: rgb(24, 119, 242);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-left: 8px;
+            margin-bottom: 10px;
+        }
+
+        .mutal-row {
+            display: block;
+            grid-template-columns: 28px 1fr;
+            margin-bottom: 10px;        
+        }
+
+        .mutals {
+            display: inline-block;
+            vertical-align: middle;
+            color: rgb(100,100,100);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 18px;
+            
+        }
+        .profile {
+            box-shadow: 0  0 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-grid">
+
+        <div class="profile">
+            <img src="cat.jpg" class="profile-pic">
+    
+            <p class="name">Oliver</p>
+            
+            <div class="mutal-row">
+                <img src="i2.png" class="mutal-pic">
+    
+                <p class="mutals">2 Mutal friends</p>
+            </div>
+    
+            <button>Add Friend</button>
+        </div>
+    
+        <div class="profile">
+            <img src="cat2.jpg" class="profile-pic">
+    
+            <p class="name">Oliver</p>
+            
+            <div class="mutal-row">
+                <img src="i2.png" class="mutal-pic">
+    
+                <p class="mutals">2 Mutal friends</p>
+            </div>
+    
+            <button>Add Friend</button>
+        </div>
+    
+        <div class="profile">
+            <img src="image.png" class="profile-pic">
+    
+            <p class="name">Oliver</p>
+            
+            <div class="mutal-row">
+                <img src="i2.png" class="mutal-pic">
+    
+                <p class="mutals">2 Mutal friends</p>
+            </div>
+    
+            <button>Add Friend</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>

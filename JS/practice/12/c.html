@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="buttonClick();">Start</button>
+    <script>
+        function buttonClick() {
+            let buttonValue=document.querySelector('button');
+            if(buttonValue.innerHTML === 'Start') {
+                setTimeout(function() {
+                    buttonValue.innerHTML='Finished!';
+                },1000);
+                
+            }
+            else if(buttonValue.innerHTML === 'Finished!') {
+                setTimeout(function() {
+                    buttonValue.innerHTML='Start';
+                },1000);
+            }
+            setTimeout(buttonClick(),1000);
+        }
+    </script>
+</body>
+</html>

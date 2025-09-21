@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e</title>
+</head>
+<body>
+    <script>
+        function covertTemperature(degrees,unit) {
+            if(unit === 'C') {
+                return (degrees*9/5) + 32;
+                
+            }
+            else if(unit === 'F') {
+                return (degrees-32)*5/9;
+            }
+        }
+        console.log(covertTemperature(25,'C'));
+        console.log(covertTemperature(86,'F'));
+    </script>
+</body>
+</html>

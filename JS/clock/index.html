@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style/clock.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="bar">
+        <button onclick="window.location.href='index.html';" class="clock ">Clock</button>
+        <button onclick="window.location.href='alarm.html';" class="alarm">Alarm</button>
+        <button onclick="window.location.href='stopwatch.html';" class="stopwatch">Stopwatch</button>
+        <button onclick="window.location.href='timer.html';" class="timer">Timer</button>
+    </nav>
+    <main class="time-box">
+        <div class="year"></div>
+        <div class="date-month">
+            <div class="date"></div>
+            <div class="month"></div>
+        </div>
+        <div class="time"></div>
+        <div class="day"></div>
+    </main>
+    <h1 class="isd">Indian Standard Time</h1>
+    <hr/>
+    <main class="zones">
+        <div class="zone">
+            <div class="loc">
+                <p class="name">Kolkata</p>
+                <p class="dayoff kol"></p>
+            </div>
+            <div class="kol-time time"></div>
+        </div>
+        <div class="zone">
+            <div class="loc">
+                <p class="name">London</p>
+                <p class="dayoff lon"></p>
+            </div>
+            <div class="lon-time time"></div>
+        </div>
+        <div class="zone">
+            <div class="loc">
+                <p class="name">Sydney</p>
+                <p class="dayoff syn"></p>
+            </div>
+            <div class="syn-time time"></div>
+        </div>
+        <div class="zone">
+            <div class="loc">
+                <p class="name">New York</p>
+                <p class="dayoff ny"></p>
+            </div>
+            <div class="ny-time time"></div>
+        </div>
+    </main>
+    <script type="module" src="script/clock.js"></script>
+</body>
+</html>

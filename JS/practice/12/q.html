@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-button">Start</button>
+    <script>
+        const element=document.querySelector('.js-button')
+        element.addEventListener('click',() => {
+            buttonClick();
+        });
+        doucment.body.addEventListener('keydown',(event)=> {
+            if(event.key === 'Enter') {
+                buttonClick();
+            }
+        });
+        function buttonClick() {
+            let buttonValue=document.querySelector('button');
+            if(buttonValue.innerHTML === 'Start') {
+                buttonValue.innerHTML='Loading...';    
+                setTimeout(function() {
+                    buttonValue.innerHTML='Finished!';
+                },1000);
+                
+            }
+            else if(buttonValue.innerHTML === 'Finished!') {
+                buttonValue.innerHTML='Loading...'; 
+                setTimeout(function() {
+                    buttonValue.innerHTML='Start';
+                },1000);
+            }
+            setTimeout(buttonClick(),1000);
+        }
+    </script>
+</body>
+</html>

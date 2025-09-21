@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(wp14922439-seashore-4k-wallpapers.jpg);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+}
+.heading button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.heading button:hover {
+    background-color: lightpink;
+    color: white;
+    border-radius: 12px;
+}
+.peek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+}
+.log {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.login {
+    border: 2px solid brown;
+    background-color: white;
+    color: brown;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    color: white;
+}
+h1 {
+    margin-top: -10px;
+    font-size: 42px;
+}
+h1 span {
+    color: yellow;
+}
+.sub-info {
+    width: 450px;
+    padding: 18px;
+    color: white;
+    line-height: 26px;
+}
+.read-more {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.read-more a {
+    text-decoration: none;
+    color: black;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

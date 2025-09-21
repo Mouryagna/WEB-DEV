@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fucntions</title>
+</head>
+<body>
+    <script>
+        function f1() {
+            console.log('hello');
+            console.log(2+2);
+        }
+        f1();
+
+        function calculateTax(p1) {
+            console.log(p1*0.1);
+        }
+        calculateTax(2000);
+        function calculateTax(p1,taxPercent=0.1) {
+            console.log(p1*taxPercent);
+        }
+        calculateTax(2000,0.2);
+        calculateTax(2000);
+    </script>
+</body>
+</html>

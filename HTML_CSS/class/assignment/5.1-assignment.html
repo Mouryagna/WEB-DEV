@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Take input using prompt dialog box, your task is to find string is palindrome or not. Display the appropriate message on the html webpage-->
+    <p id="palindrome"></p>
+    <script>
+        let input=prompt("enter and string to find given is palindrome or not");
+        let c=1;
+        let n=input.length;
+        for(let i=0;i<n/2;i++) {
+            if(input[i]!=input[n-i-1]) {
+                c=0;
+                break;
+            }
+        }
+        if(c) {
+            document.getElementById('palindrome').innerHTML=`Given ${input} is palindrome`;
+        }
+        else {
+            document.getElementById('palindrome').innerHTML=`Given ${input} is not palindrome`;
+        }
+    </script>
+</body>
+</html>
