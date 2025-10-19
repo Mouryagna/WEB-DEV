@@ -2,15 +2,14 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "1-intro.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "keywords": [],
   "dependencies": {
-    "bootstrap": "^5.3.8",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
